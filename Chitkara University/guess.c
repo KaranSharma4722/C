@@ -4,7 +4,7 @@
 int main()
 {
 
-    int i, j = 1;
+    int i, j = 2;
     char yo;
 
     printf("\n\t\t\t\t\t'WELCOME To GUESSING Game'\n");
@@ -13,28 +13,28 @@ yo:
     printf("\n\t\t\t\t\t\tTry Guess:");
     scanf("%d", &i);
 
-    for (j; j <= 4; j++)
+    for (j; j <= 5; j++)
     {
 
         if ((i >= num - 15 && i <= num - 1) || (i >= num + 1 && i <= num + 15))
         {
             printf("\n\t\t\t\tOpps Wrong Answer but You are 'CLOSE' to Number");
 
-            printf("\n\n\t\t\t\t\t\tTry Guessing again:");
+            printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
             scanf("%d", &i);
         }
 
         else if (i < num - 15 && i > 0)
         {
             printf("\n\t\t\t\tOpps Wrong Answer but You are ' TOO - LOW ' to Number");
-            printf("\n\n\t\t\t\t\t\tTry Guessing again:");
+            printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
             scanf("%d", &i);
         }
 
         else if (i > num + 15 && i < 100)
         {
             printf("\n\t\t\t\tOpps Wrong Answer but You are ' TOO - HIGH ' to Number");
-            printf("\n\n\t\t\t\t\t\tTry Guessing again:");
+            printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
             scanf("%d", &i);
         }
 
