@@ -2,17 +2,19 @@
 int main()
 {
 int a,b,sum,mul,div,sub,mod;
-printf("Enter any 2 Numbers:\n");
-scanf("%d\n%d",&a,&b);
+printf("Enter First Number:");
+scanf("%d",&a);
+printf("Enter Second Number:");
+scanf("%d",&b);
 sum=a+b;
 sub=a-b;
 mul=a*b;
 div=a/b;
 mod=a%b;
-printf("%d\n",sum);
-printf("%d\n",sub);
-printf("%d\n",mul);
-printf("%d\n",div);
-printf("%d\n",mod);
+printf("SUM =%d\n",sum);
+printf("SUB =%d\n",sub);
+printf("MUL =%d\n",mul);
+printf("DIV =%d\n",div);
+printf("MOD =%d\n",mod);
 return 0;
 }

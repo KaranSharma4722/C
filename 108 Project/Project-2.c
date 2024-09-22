@@ -8,9 +8,9 @@ printf("MUST USE :-\nKilometer      : km,\nmeter          : m,\ncentimeter     :
 printf("\nEnter the metric unit of measurement you have: ");
 scanf("%c",&a);
 printf("Enter its Value:");
-scanf("%f",&c);
+scanf("%f",&b);
 printf("\nMetric unit of measurement you want to convert in: ");
-scanf("%c",&b);
+scanf("%c",&c);
 if (a==km && b==m)
 {
  printf("\n%lf",d = c *1000);   
@@ -18,3 +18,6 @@ if (a==km && b==m)
 
 return 0;
 }
+
+
+

@@ -7,7 +7,7 @@ void textcolor(int color_name)
 int main()
 {
     int i;
-    for ( i = 0; i <15 ; i++)
+    for ( i = 0; i <10 ; i++)
     {
         textcolor(i);
         printf("Karan Sharma\n");
