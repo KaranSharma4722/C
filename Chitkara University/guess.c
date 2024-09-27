@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include<stdlib.h>
+#include<time.h>
 // Change this number if want ot change guess number...
 
 int main()
 {
+     srand(time(0));
     int num = (rand()%100)+1;
     int i, j = 2;
     char yo;
@@ -17,24 +19,24 @@ yo:
     for (j; j <= 5; j++)
     {
 
-        if ((i >= num - 15 && i <= num - 1) || (i >= num + 1 && i <= num + 15))
-        {
-            printf("\n\t\t\t\tOpps Wrong Answer but You are 'CLOSE' to Number");
+        // if ((i >= num - 15 && i <= num - 1) || (i >= num + 1 && i <= num + 15))
+        // {
+        //     printf("\n\t\t\t\tOpps Wrong Answer but You are 'CLOSE' to Number");
 
+        //     printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
+        //     scanf("%d", &i);
+        // }
+
+     if (i < num )
+        {
+            printf("\n\t\t\t\tOpps Wrong Answer you Guessed Small Number");
             printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
             scanf("%d", &i);
         }
 
-        else if (i < num - 15 && i > 0)
+        else if (i > num )
         {
-            printf("\n\t\t\t\tOpps Wrong Answer but You are ' TOO - LOW ' to Number");
-            printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
-            scanf("%d", &i);
-        }
-
-        else if (i > num + 15 && i < 100)
-        {
-            printf("\n\t\t\t\tOpps Wrong Answer but You are ' TOO - HIGH ' to Number");
+            printf("\n\t\t\t\tOpps Wrong Answer You Guessed grater Number");
             printf("\n\n\t\t\t\t\t\tTurn no : %d Try Guessing again:",j);
             scanf("%d", &i);
         }
