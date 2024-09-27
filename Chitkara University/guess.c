@@ -1,9 +1,10 @@
 #include <stdio.h>
-#define num 25 // Change this number if want ot change guess number...
+#include<stdlib.h>
+// Change this number if want ot change guess number...
 
 int main()
 {
-
+    int num = (rand()%100)+1;
     int i, j = 2;
     char yo;
 
@@ -40,7 +41,7 @@ yo:
 
         else if (i < 1 || i > 100)
         {
-            printf("\n\t\t\t\t\t'INCELID NUMBER' Only '1 to 100' Allowed...");
+            printf("\n\t\t\t\t\t'INVELID NUMBER' Only '1 to 100' Allowed...");
             goto yo;
         }
 
@@ -52,7 +53,7 @@ yo:
     }
     if (i != num)
     {
-        printf("\n\t\t\t\t\t\tOH-NO You LOST");
+        printf("\n\t\t\t\t\t\tOH-NO You LOST the Number was %d",num);
     }
 
     return 0;
